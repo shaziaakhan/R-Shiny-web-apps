@@ -27,7 +27,7 @@ ui <- fluidPage(theme = shinytheme("superhero"),
                 ) 
 ) 
 
-# Define server function  
+# Defining server function  
 server <- function(input, output) {
   output$txtout <- renderText({
     paste( input$txt1, input$txt2, sep = " " )
